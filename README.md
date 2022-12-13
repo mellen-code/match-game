@@ -1,6 +1,6 @@
 # Guilty Pleasures Cabaret Match Game <a href="https://gpc-matchgame.netlify.app/" target="_blank">Visit Here</a>
 <a href="https://gpc-matchgame.netlify.app/" target="_blank">
-<img src="https://media.giphy.com/media/HdH82S9MPWdWmUk6eg/giphy.gif" width="80%" alt="link to match game"/>
+<img src="https://media.giphy.com/media/Ktvwkdu0XaM6bEJv7K/giphy.gif" width="80%" alt="link to match game"/>
 </a>
 
 Matching game featuring the talented performers of Guilty Pleasures Cabaret, a female-led, NYC-based theater production company that creates multi-disciplinary music and dance variety shows.

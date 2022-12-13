@@ -7,10 +7,6 @@ const selectors = {
     win: document.querySelector('.win')
 }
 
-// const image1 = function() {
-//     document.getElementById('image1').style.display = 'block'
-// }
-
 const state = {
     gameStarted: false,
     flippedCards: 0,
@@ -84,12 +80,11 @@ const generateMatchGame = () => {
     emojis.push(createImage('css/images/gotIt.png', 'image8').outerHTML);
     emojis.push(createImage('css/images/redDress.png', 'image9').outerHTML);
     emojis.push(createImage('css/images/beautyContest.png', 'image10').outerHTML);
-    emojis.push(createImage('css/images/jesSheFeathers.png', 'image11').outerHTML);
-    
-    
 
+    // alternate image option:
+    // emojis.push(createImage('css/images/jesSheFeathers.png', 'image11').outerHTML);
     
-    // const emojis = ['🍒', `${img1}`, '🥑', '🌽', '🥕', '🍇', '🍉', '🍌', '🥭', '🍍']
+    
     const picks = pickRandom(emojis, (dimensions * dimensions)/2)
 
     const items = shuffle([...picks, ...picks])
@@ -105,10 +100,7 @@ const generateMatchGame = () => {
                 </div>`).join('')}
         <div>`
 
-    
-        
-
-        console.log(cards)
+    // console.log(cards)
 
     const parser = new DOMParser().parseFromString(cards, 'text/html')
 
@@ -116,10 +108,11 @@ const generateMatchGame = () => {
 }
 
 
-// Start game & disable 'start' button to prevent starting game over and over
+// Start game & enable Moves feature.
+// Notes on timer feature, not yet added:
 const startGame = () => {
     state.gameStarted = true;
-    selectors.start.classList.add('disabled');
+    // selectors.start.classList.add('disabled');
 
     state.loop = setInterval(() => {
         // state.totalTime++
@@ -166,7 +159,7 @@ const flipCard = card => {
             flipBackCards()
         }, 1000)
 
-// If there are no more cards to flip, we won the game:
+// If there are no more cards to flip, game is finished. Feature to add: winner text:
         if (!document.querySelectorAll('.card:not(.flipped)').length) {
             console.log('Winner!')
             

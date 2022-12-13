@@ -1,14 +1,23 @@
 html {
-    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
+
+    background: url('images/blackRedBackground.png') no-repeat center center fixed; 
+    background-position: right bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* previous styling: */
+  /* width: 100%;
     height: 100%;
-    background-image: url('images/blackRedBackground.avif');
+    background-image: url('images/blackRedBackground.png');
     background-size: cover;
     /* background-position: 25% 75%; */
     /* background-position: right 35% bottom; */
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    font-family: 'Roboto Condensed', sans-serif;
-    overflow: hidden;
+    /* background-position: right bottom;
+    background-repeat: no-repeat;  */
 }
 
 .game {
@@ -43,8 +52,6 @@ body > div > h1:nth-child(2) {
     margin-top: 0;
     margin-bottom: 1.1%;
     font-size: 32px;
-    /* color: #fa131a;
-    -webkit-text-stroke: 0.00000000000000000000000000000001px white; */
 }
 
 #start {
@@ -193,6 +200,48 @@ body > div > div > div > div.stats > div.timer {
     color: #282A3A;
 }
 
-.highlight {
+/* .highlight {
     color: #6f00fc;
+} */
+
+@media screen and (max-width: 515px) {
+    .game {
+        transform: scale(0.65);
+        left: -25%;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 516px) and (max-width: 600px) {
+    .game {
+        transform: scale(0.65);
+        left: -20%;
+        top: -15%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .game {
+        transform: scale(0.8);
+        left: 10%;
+        top: -5%;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1100px) and (max-height: 700px) {
+    .game {
+        transform: scale(0.65);
+        left: 25%;
+        top: -18%; 
+    }
+}
+
+@media screen and (max-height: 800px) {
+    html {
+        overflow: scroll;
+    }
+
+    h1 {
+        margin-top: 20%;
+    }
 }

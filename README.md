@@ -10,7 +10,7 @@ Matching game featuring the talented performers of Guilty Pleasures Cabaret, a f
 
 
 ## Optimizations
-I would next add accessibility features, including alt attributes to photos. Also would like to include further mobile styling. I'd also add a Start button and timer, while keeping the styling user-friendly.
+I would next include further mobile styling. I'd also add a Start button and timer, while keeping the styling user-friendly.
 
 ## Lessons Learned
 

@@ -68,24 +68,24 @@ const generateMatchGame = () => {
         return img;
     };
 
-    const emojis = []
+    const pics = []
 
-    emojis.push(createImage('css/images/blueLight.png', 'image1').outerHTML);
-    emojis.push(createImage('css/images/canCanThreeGirls.png', 'image2').outerHTML);
-    emojis.push(createImage('css/images/contortion1.png', 'image3').outerHTML);
-    emojis.push(createImage('css/images/sirens1.png', 'image4').outerHTML);
-    emojis.push(createImage('css/images/speakeasySocial.png', 'image5').outerHTML);
-    emojis.push(createImage('css/images/strongWomen.png', 'image6').outerHTML);
-    emojis.push(createImage('css/images/kittyKatAndJesse.png', 'image7').outerHTML);
-    emojis.push(createImage('css/images/gotIt.png', 'image8').outerHTML);
-    emojis.push(createImage('css/images/redDress.png', 'image9').outerHTML);
-    emojis.push(createImage('css/images/beautyContest.png', 'image10').outerHTML);
+    pics.push(createImage('css/images/blueLight.png', 'image1').outerHTML);
+    pics.push(createImage('css/images/canCanThreeGirls.png', 'image2').outerHTML);
+    pics.push(createImage('css/images/contortion1.png', 'image3').outerHTML);
+    pics.push(createImage('css/images/sirens1.png', 'image4').outerHTML);
+    pics.push(createImage('css/images/speakeasySocial.png', 'image5').outerHTML);
+    pics.push(createImage('css/images/strongWomen.png', 'image6').outerHTML);
+    pics.push(createImage('css/images/kittyKatAndJesse.png', 'image7').outerHTML);
+    pics.push(createImage('css/images/gotIt.png', 'image8').outerHTML);
+    pics.push(createImage('css/images/redDress.png', 'image9').outerHTML);
+    pics.push(createImage('css/images/beautyContest.png', 'image10').outerHTML);
 
     // alternate image option:
-    // emojis.push(createImage('css/images/jesSheFeathers.png', 'image11').outerHTML);
+    // pics.push(createImage('css/images/jesSheFeathers.png', 'image11').outerHTML);
     
     
-    const picks = pickRandom(emojis, (dimensions * dimensions)/2)
+    const picks = pickRandom(pics, (dimensions * dimensions)/2)
 
     const items = shuffle([...picks, ...picks])
 

@@ -57,32 +57,34 @@ const generateMatchGame = () => {
     }
 
 
-    let createImage = function(src, id) {
+    let createImage = function(src, id, alt) {
         let img = new Image();
         img.src = src;
         img.id = id;
 
         img.width = 130;
         img.height = 130;
+
+        img.alt = alt;
         
         return img;
     };
 
     const pics = []
 
-    pics.push(createImage('css/images/blueLight.png', 'image1').outerHTML);
-    pics.push(createImage('css/images/canCanThreeGirls.png', 'image2').outerHTML);
-    pics.push(createImage('css/images/contortion1.png', 'image3').outerHTML);
-    pics.push(createImage('css/images/sirens1.png', 'image4').outerHTML);
-    pics.push(createImage('css/images/speakeasySocial.png', 'image5').outerHTML);
-    pics.push(createImage('css/images/strongWomen.png', 'image6').outerHTML);
-    pics.push(createImage('css/images/kittyKatAndJesse.png', 'image7').outerHTML);
-    pics.push(createImage('css/images/gotIt.png', 'image8').outerHTML);
-    pics.push(createImage('css/images/redDress.png', 'image9').outerHTML);
-    pics.push(createImage('css/images/beautyContest.png', 'image10').outerHTML);
+    pics.push(createImage('css/images/blueLight.png', 'image1', 'Two dancers under blue spotlight').outerHTML);
+    pics.push(createImage('css/images/canCanThreeGirls.png', 'image2', 'Three can-can dancers').outerHTML);
+    pics.push(createImage('css/images/contortion1.png', 'image3', 'Two contortion dancers').outerHTML);
+    pics.push(createImage('css/images/sirens1.png', 'image4', 'Two singers wearing fake furs').outerHTML);
+    pics.push(createImage('css/images/speakeasySocial.png', 'image5', 'A group of speakeasy dancers').outerHTML);
+    pics.push(createImage('css/images/strongWomen.png', 'image6', 'Two dancers showing their strength').outerHTML);
+    pics.push(createImage('css/images/kittyKatAndJesse.png', 'image7', 'A couple dancing').outerHTML);
+    pics.push(createImage('css/images/gotIt.png', 'image8', 'Dancers bending backwards').outerHTML);
+    pics.push(createImage('css/images/redDress.png', 'image9', 'A singer in a red dress').outerHTML);
+    pics.push(createImage('css/images/beautyContest.png', 'image10', 'A group of performers posing').outerHTML);
 
     // alternate image option:
-    // pics.push(createImage('css/images/jesSheFeathers.png', 'image11').outerHTML);
+    // pics.push(createImage('css/images/jesSheFeathers.png', 'image11', 'A drag performer strutting').outerHTML);
     
     
     const picks = pickRandom(pics, (dimensions * dimensions)/2)

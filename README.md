@@ -3,7 +3,7 @@
 <img src="https://media.giphy.com/media/Ktvwkdu0XaM6bEJv7K/giphy.gif" width="80%" margin="auto" alt="link to match game"/>
 </a>
 
-Matching game featuring the talented performers of Guilty Pleasures Cabaret, a female-led, NYC-based theater production company that creates multi-disciplinary music and dance variety shows.
+Matching game featuring the talented performers of Guilty Pleasures Cabaret Entertainment, a female-led, NYC-based production company that creates multi-disciplinary music and dance variety shows.
 
 
 ## Tech used: ![HTML5 BADGE](https://img.shields.io/static/v1?label=|&message=HTML5&color=23555f&style=plastic&logo=html5)![CSS BADGE](https://img.shields.io/static/v1?label=|&message=CSS3&color=285f65&style=plastic&logo=css3)![JAVASCRIPT BADGE](https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript)

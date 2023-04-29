@@ -161,18 +161,29 @@ const flipCard = card => {
             flipBackCards()
         }, 1000)
 
-// If there are no more cards to flip, game is finished. Feature to add: winner text:
+// If there are no more cards to flip, game is finished. Confetti thrown:
+        const jsConfetti = new JSConfetti()
+
+        async function makeItConfetti() {    
+            await jsConfetti.addConfetti({
+                emojis: ['🔥', '✨', '🪩'],
+                emojiSize: 50,
+                confettiNumber: 700,
+            });
+            jsConfetti.clearCanvas();
+            await jsConfetti.addConfetti({
+                emojis: ['🌆', '💋', '💃🏾'],
+                emojiSize: 50,
+                confettiNumber: 700,
+            });
+            location.reload();
+        }
+
         if (!document.querySelectorAll('.card:not(.flipped)').length) {
-            console.log('Winner!')
+            makeItConfetti()
             
             setTimeout = (() => {
                 selectors.boardContainer.classList.add('flipped')
-                selectors.win.innerHTML = 
-                    `<span class="win-text">
-                        You Win!<br />
-                        with <span class="highlight">${state.totalFlips}</span> moves<br />
-                        under <span class="highlight">${state.totalTime}</span> seconds
-                    </span>`
 
                 clearInterval(state.loop)
             }, 1000)
@@ -196,7 +207,6 @@ const attachEventListeners = () => {
         }       
     })
 }
-
 
 generateMatchGame();
 attachEventListeners();

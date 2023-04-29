@@ -179,7 +179,7 @@ const flipCard = card => {
             location.reload();
         }
 
-        if (!document.querySelectorAll('.card:not(.flipped)').length) {
+        if (document.querySelectorAll('.card:not(.flipped)').length == 0) {
             makeItConfetti()
             
             setTimeout = (() => {
